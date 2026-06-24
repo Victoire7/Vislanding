@@ -14,7 +14,6 @@
 | `training/kitti_json_files/` | 数据集 json 生成 |
 | `training/data_server_info/` | 数据路径模板 |
 | `final_model/README.md` `weight/README.md` | 权重说明 |
-| `media/screenshots/` | 示意图（不含大体积 gif） |
 | `docs/` | 发布文档 |
 
 ## `test` 分支（`main` + 辅助）
