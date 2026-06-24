@@ -1,0 +1,29 @@
+# Vislanding — Python dependencies
+# Install PyTorch separately to match your CUDA version.
+
+# Core
+numpy>=1.21
+opencv-python>=4.5
+matplotlib>=3.5
+tqdm
+Pillow
+
+# Config (Metric3D style)
+mmengine>=0.10.0
+# mmcv>=2.0.0   # optional if mmengine Config is enough
+
+# Training
+tensorboard
+scipy
+scikit-image
+
+# Export / analysis (host machine)
+onnx>=1.14
+onnxsim>=0.4.36
+thop>=0.1.1
+
+# Optional: ONNXRuntime verification
+# onnxruntime-gpu
+
+# Jetson-side (see deployment/jetson/requirements_jetson.txt)
+# pycuda / opencv-python-headless — install on device, not here

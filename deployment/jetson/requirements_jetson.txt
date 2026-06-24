@@ -1,0 +1,12 @@
+# Run these on the Jetson device.
+# `tensorrt` and CUDA libraries are part of JetPack — do NOT pip install them.
+# These are only the extras the runtime scripts depend on.
+
+numpy
+opencv-python
+# Choose one of the two for the pure-TRT runner:
+pycuda                 # easiest path, requires: sudo apt install nvidia-cuda-toolkit (or use the JetPack toolkit)
+# cuda-python          # alternative; NVIDIA's official cuda Python bindings
+
+# Only if you want to run via ONNXRuntime instead of (or in addition to) pure TRT:
+# onnxruntime-gpu      # JetPack-specific wheel from NVIDIA — pip install --extra-index-url https://elinux.org/Jetson_Zoo  pycuda

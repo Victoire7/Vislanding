@@ -1,0 +1,94 @@
+# Build / IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+
+# Logs & outputs
+*.log
+work_dirs/
+training/work_dirs/
+show_dirs/
+Eval_*.txt
+ann_vis/
+normal_result/
+bench_models/
+output/
+*.mp4
+
+# Large binaries (use README + Release / LFS instead)
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.plan
+*.engine
+*.tar
+*.zip
+
+# Keep README placeholders inside weight dirs
+!weight/README.md
+!final_model/README.md
+
+# Exclude weight/final_model contents but keep README
+weight/*
+!weight/README.md
+final_model/*
+!final_model/README.md
+
+# Local data & symlinks
+data/
+training/data/
+training/weights/
+training/202504/
+training/scripts/result/
+training/scripts/depth_to_normal/
+
+# Scratch / personal scripts
+1.py
+2.py
+test.py
+cheack_ratio.py
+check_overwrite.py
+recover_overwrite.py
+copy_coco_files.py
+cut_video.py
+cal_area_demo.py
+cal_area_demo_real.py
+es_slz_real.py
+generate_es_slz_real.py
+generate_pred_normal.py
+extract_rgb_ann.py
+make_sd_ann.py
+make_video.py
+mmseg_metric_demo.py
+vis_gt.py
+vis_3d_bar.py
+vis_miou_bar.py
+diagnose_tensorboard.py
+hubconf2.py
+
+# Figures (regenerate from scripts)
+*.png
+*.pdf
+!media/**/*.png
+!media/**/*.jpg
+!media/**/*.gif
+
+# Misc
+training/mono/scripts/train_scripts/=2.0.0rc4
+iros_exp/
+eval_semantic/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,11 @@
+# Run these on the *export host* (a CUDA dev machine, NOT the Jetson).
+# Use the same PyTorch version as the one used to train the checkpoint when possible.
+torch>=2.0
+onnx>=1.15
+onnxconverter-common>=1.14
+onnxsim>=0.4.36     # optional, for graph simplification
+mmengine>=0.10
+opencv-python
+numpy
+thop>=0.1.1            # count_model_flops.py (recommended on host)
+fvcore>=0.1.5          # optional: --backend fvcore (ViT+RAFT 易失败)
