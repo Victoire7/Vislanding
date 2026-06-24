@@ -81,8 +81,6 @@ python deployment/jetson/bench_fps_real.py ./bench_models /path/to/images
 | `main` | 核心推理 / 训练 / 部署代码 |
 | `test` | `main` + 实验配置、辅助脚本、可视化与数据处理工具 |
 
-发布命令：`bash scripts/publish_vislanding.sh main` 或 `bash scripts/publish_vislanding.sh test`
-
 ---
 
 ## 目录结构
